@@ -86,7 +86,7 @@ class RestoreSharepoint(Scraper):
         except: return True
 
 parser = argparse.ArgumentParser(description='Restore sharepoint items from recycle bin')
-parser.add_argument('-u', '--url', required=True, help='url to recycle from e.g. https://356tno.sharepoint.com/teams/***/_layouts/*/RecycleBin.aspx')
+parser.add_argument('-u', '--url', required=True, help='url to recycle from e.g. https://***.sharepoint.com/teams/***/_layouts/*/RecycleBin.aspx')
 args = parser.parse_args()
 
 def main():
